@@ -21,10 +21,10 @@ proposed solution.
 
 ## Waiting for the Mac or iPhone app?
 
-Subscribe to the waitlist issues (open one and click **Subscribe**) and you'll be notified when they ship:
+Open the waitlist issue and click **Subscribe**, and you'll be notified when it ships:
 
-- macOS app: see the issue labelled `waitlist: macos`
-- iPhone app: see the issue labelled `waitlist: ios`
+- [macOS app waitlist](https://github.com/Vermino/oak-desk-feedback/issues/1)
+- [iPhone app waitlist](https://github.com/Vermino/oak-desk-feedback/issues/2)
 
 ## Support the work
 

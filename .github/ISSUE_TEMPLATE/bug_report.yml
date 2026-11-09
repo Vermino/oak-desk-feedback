@@ -1,0 +1,64 @@
+name: Bug report
+description: Something in Oak Desk doesn't work the way it should.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Issues here are public: don't paste tokens, pairing codes or private content from your rounds.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Post a round with `desk post round.json`
+        2. Open it on the phone
+        3. ...
+  - type: input
+    id: version
+    attributes:
+      label: Oak Desk version
+      description: Shown in the app under Settings, or run `desk health`.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Which part?
+      multiple: true
+      options:
+        - Desk server
+        - Windows app (widget)
+        - Android app
+        - Desk in a browser
+        - desk command (agents)
+        - Install or pairing
+        - Website
+    validations:
+      required: true
+  - type: dropdown
+    id: server
+    attributes:
+      label: Where does your desk server run?
+      options:
+        - On this computer
+        - Homelab or NAS (Docker)
+        - Other server or VPS
+        - Not sure
+  - type: input
+    id: os
+    attributes:
+      label: Operating system(s)
+      placeholder: Windows 11, Android 15, Ubuntu 24.04 ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove anything private first.

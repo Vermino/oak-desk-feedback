@@ -1,0 +1,23 @@
+name: Idea or request
+description: Suggest something Oak Desk should do.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: The situation and the problem. This helps more than a proposed solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: dropdown
+    id: who
+    attributes:
+      label: How do you use Oak Desk?
+      options:
+        - Solo, my own agents
+        - A team sharing agents
+        - Just trying it out
